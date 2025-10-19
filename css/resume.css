@@ -1,0 +1,190 @@
+/* --- Thiết lập chung (Đồng bộ với Trang chủ) --- */
+body {
+    background-color: #F5F5DC;
+    font-family: "Outfit", sans-serif;
+    font-size: 20px;
+    margin: 0;
+}
+
+b {
+    color: #FF6A6A; /* Màu highlight cho chữ in đậm */
+}
+
+/* --- Khối Avatar/Thông tin Cá nhân (Đồng bộ) --- */
+.avatar {
+    display: flex;
+    gap: 60px;
+    margin: 50px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 50px;
+}
+
+.anhdaidien img {
+    height: 200px;
+    width: 200px;
+    border-radius: 20%;
+    border: 3px solid #fff;
+}
+
+.profile h1 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.profile p {
+    font-style: italic;
+    margin-top: 0;
+}
+
+.social img {
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+}
+
+.divider {
+    width: 2px;
+    background-color: #9C9C9C;
+    height: 100%;
+    margin: 20px 0;
+    border-radius: 20px;
+}
+
+.infor {
+    display: flex;
+    flex-direction: row; /* Thay đổi thành row để hiển thị 2 cột info */
+    gap: 80px;
+    line-height: 30px;
+    margin-top: 33px;
+}
+
+
+/* Đồng bộ: sử dụng contact-block thay cho block1/block2 */
+.infor .contact-block p {
+    margin: 0;
+}
+
+/* --- Layout chính --- */
+.body {
+    display: flex;
+    margin: 20px;
+}
+
+/* --- Menu Điều hướng (Đồng bộ) --- */
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    margin: 50px 0 50px 100px;
+    height: 700px;
+}
+
+.tools {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+.tools li {
+    margin: 30px 0;
+}
+
+.tools li a img {
+    width: 60px;
+    height: 65px;
+    background-color: #E8E8E8;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.tools li p {
+    font-size: 20px;
+    margin: 0;
+    font-family: "Exo", sans-serif;
+}
+
+.tools li a img:hover {
+    background-color: pink;
+    transform: scale(0.9);
+}
+
+/* Đánh dấu mục đang hoạt động (Sử dụng class 'active') */
+.tools .active a img {
+    background-color: pink;
+}
+
+/* --- Khối nội dung Resume --- */
+.body .resume {
+    width: 78%;
+    background-color: #ffffff;
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-left: 80px;
+    padding: 50px;
+    font-family: "Outfit", sans-serif;
+    line-height: 1.6;
+}
+
+/* Đường kẻ ngang */
+.body .resume hr {
+    border: 1px solid #7A67EE;
+    border-radius: 20%;
+}
+
+/* --- Cấu trúc Resume nội bộ --- */
+.resume img {
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+}
+
+.head1, .head2, .head3 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Gỡ bỏ các margin không cần thiết cho h2, chỉ giữ lại nếu cần thiết để căn chỉnh */
+.head2 h2 {
+    margin-top: 30px;
+}
+
+.head3 h2 {
+    margin-top: 35px;
+}
+
+.school, .achive {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.achive li {
+    line-height: 40px;
+}
+
+/* --- Style Table --- */
+table {
+    width: 100%;
+    border: 2px solid #6E8B3D;
+    border-collapse: collapse;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #6E8B3D;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #CD853F;
+    color: white;
+}

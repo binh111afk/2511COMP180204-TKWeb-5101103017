@@ -1,0 +1,162 @@
+body {
+    background-color: #F5F5DC;
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.profile .name h1 {
+    font-size: 30px;
+}
+
+
+.anhdaidien img {
+    height: 200px;
+    width: 200px;
+    border-radius: 20%;
+    border: 3px solid #fff;
+    margin: 20px;
+}
+
+.avatar {
+    display: flex;
+    gap: 80px;
+    margin: 50px;
+    height: auto;
+    width: auto;
+    background-color: #ffffff;
+    border-radius: 50px;
+}
+
+.profile p {
+    font-style: italic;
+}
+
+.social img {
+    width: 45px;
+    height: 45px;
+}
+
+.social a img {
+    line-height: 40px;
+    margin-right: 10px;
+}
+
+.infor .block1 {
+    display: flex;
+    gap: 80px;
+}
+
+.infor .block2 {
+    display: flex;
+    gap: 215px;
+}
+
+.infor {
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+.avatar .divider {
+    width: 2px;
+    background-color: #9C9C9C;
+    height: auto;
+    margin: 20px 0 20px 0;
+    border-radius: 20px;
+}
+
+b {
+    color: #FF6A6A;
+}
+
+.menu {
+  display: flex;               /* bật flexbox */
+  justify-content: center;     /* căn giữa ngang */
+  align-items: center;         /* căn giữa dọc */
+  height: 700px;
+  width: 600px;
+  background-color: #fff;
+  margin: 50px 50px;
+  border-radius: 30px;
+}
+
+.tools {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.tools li {
+  list-style-type: none;
+  margin: 20px 0;  /* khoảng cách giữa các mục */
+  padding: 0 35px 0 35px;
+}
+
+.tools li a img {
+  width: 60px;
+  height: 65px;
+  background-color: #E8E8E8;
+  padding: 20px;
+  border-radius: 10px;
+
+}
+
+.tools li p {
+  font-size: 20px;
+  margin: 0 0 0 0;
+  font-family: "Exo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.tools li a img:hover {
+    background-color: pink;
+    transform: scale(0.9);
+    transition: 0.5s;
+}
+
+.tools li a img:visited {
+    background-color: red;
+    transform: scale(0.9);
+}
+
+.tools .li4 a img {
+    background-color: pink;
+}
+
+.body {
+    display: flex;
+    gap: 30px;
+    margin: 20px 50px;
+}
+
+.body .recommend {
+    width: auto;
+    height: auto;
+    background-color: #fff;
+    border-radius: 30px;
+    margin-top: 48px;
+    padding: 30px 30px 0 30px;
+    font-family: "Outfit",sans-serif;
+}
+
+.body .recommend p {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: justify;
+}
+
+.body .recommend hr {
+    border: 1px solid #7A67EE;
+    border-radius: 20%;
+}
+
+.sticker img {
+   padding-top: 80px;
+   margin-left: 100px;
+}

@@ -1,0 +1,135 @@
+/* Sử dụng thuộc tính font-family cơ bản */
+body {
+    background-color: #F5F5DC;
+    font-family: "Outfit", sans-serif;
+    font-size: 20px;
+    margin: 0;
+}
+
+.avatar {
+    display: flex;
+    gap: 60px;
+    margin: 50px;
+    padding: 20px; 
+    background-color: #ffffff;
+    border-radius: 50px;
+}
+
+.anhdaidien img {
+    height: 200px;
+    width: 200px;
+    border-radius: 20%;
+    border: 3px solid #fff;
+}
+
+.profile h1 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.profile p {
+    font-style: italic;
+    margin-top: 0;
+}
+
+.social img {
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+}
+
+.infor {
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 80px;
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+.infor .contact-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.avatar .divider {
+    width: 2px;
+    background-color: #9C9C9C;
+    height: 100%;
+    margin: 20px 0;
+    border-radius: 20px;
+}
+
+b {
+    color: #FF6A6A;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    background-color: #fff;
+    margin: 50px 50px;
+    border-radius: 30px;
+}
+
+.tools {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+.tools li {
+    margin: 20px 0;
+}
+
+.tools li a img {
+    width: 60px;
+    height: 65px;
+    background-color: #E8E8E8;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.tools li p {
+    font-size: 20px;
+    margin: 0; 
+    font-family: "Exo", sans-serif;
+}
+
+.tools li a img:hover {
+    background-color: pink;
+    transform: scale(0.9);
+}
+
+.tools .active a img {
+    background-color: pink;
+}
+
+.body {
+    display: flex;
+    gap: 30px;
+    margin: 20px 50px;
+}
+
+.body .recommend {
+    background-color: #fff;
+    border-radius: 30px;
+    margin-top: 48px;
+    padding: 30px; 
+    font-family: "Outfit", sans-serif;
+}
+
+.body .recommend p {
+    font-size: 20px;
+    line-height: 40px;
+    text-align: justify;
+    margin-bottom: 20px; 
+}
+
+.body .recommend hr {
+    border: 1px solid #7A67EE;
+    border-radius: 20%;
+}
