@@ -1,0 +1,269 @@
+body {
+    background-image: url("../img/ocean.jpg");
+}
+
+#shark {
+    position: absolute;
+    top: 400px;
+    left: -200px; 
+    animation-name: Shark;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+#faint {
+    position: absolute;
+    top: 420px;
+    left: -200px; 
+    animation-name: faint;
+    animation-duration: 10.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+#diver1 {
+    position: absolute;
+    top: 410px;
+    left: -200px; 
+    animation-name: diver1;
+    animation-duration: 13s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+#diver2 {
+    position: absolute;
+    top: 405px;
+    left: -200px; 
+    animation-name: diver2;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+#diver3 {
+    position: absolute;
+    top: 350px;
+    left: -200px; 
+    animation-name: diver3;
+    animation-duration: 10.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+#gold {
+    position: absolute;
+    top: 500px;
+    left: -200px; 
+    animation-name: gold;
+    animation-duration: 9s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+#turtle {
+    position: absolute;
+    top: 250px;
+    left: -200px; 
+    animation-name: turtle;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+@keyframes Shark {
+    0% {
+        left: -200px;       
+        transform: scaleX(1);
+    }
+    50% {
+        left: calc(100% + 200px); 
+        transform: scaleX(1);
+        top: 300px;
+    }
+    51% {
+        left: calc(100% + 200px);
+        transform: scaleX(-1);   
+        top: 200px;
+    }
+    98% {
+        left: -200px;       
+        transform: scaleX(-1);
+        top: 100px;
+    }
+    100% {
+        left: -300px;        
+        transform: scaleX(-1);
+        top: 100px;
+    }
+}
+
+@keyframes faint {
+    0% {
+        left: -200px;       
+        transform: scaleX(1);
+    }
+    50% {
+        left: calc(100% + 200px); 
+        transform: scaleX(1);
+        top: 300px;
+    }
+    51% {
+        left: calc(100% + 200px);
+        transform: scaleX(-1);    
+        top: 200px;
+    }
+    98% {
+        left: -200px;        
+        transform: scaleX(-1);
+        top: 100px;
+    }
+    100% {
+        left: -300px;        
+        transform: scaleX(-1);
+        top: 100px;
+    }
+}
+
+@keyframes diver1 {
+    0% {
+        left: -200px;        
+        transform: scaleX(1);
+    }
+    50% {
+        left: calc(100% + 200px); 
+        transform: scaleX(1);
+        top: 300px;
+    }
+    51% {
+        left: calc(100% + 200px);
+        transform: scaleX(-1);    
+        top: 200px;
+    }
+    98% {
+        left: -200px;       
+        transform: scaleX(-1);
+        top: 100px;
+    }
+    100% {
+        left: -300px;       
+        transform: scaleX(-1);
+        top: 100px;
+    }
+}
+
+@keyframes diver2 {
+    0% {
+        left: -200px;       
+        transform: scaleX(1);
+    }
+    50% {
+        left: calc(100% + 200px); 
+        transform: scaleX(1);
+        top: 300px;
+    }
+    51% {
+        left: calc(100% + 200px);
+        transform: scaleX(-1);    
+        top: 200px;
+    }
+    98% {
+        left: -200px;        
+        transform: scaleX(-1);
+        top: 100px;
+    }
+    100% {
+        left: -300px;        
+        transform: scaleX(-1);
+        top: 100px;
+    }
+}
+
+@keyframes diver3 {
+    0% {
+        left: -200px;       
+        transform: scaleX(1);
+    }
+    50% {
+        left: calc(100% + 200px); 
+        transform: scaleX(1);
+        top: 300px;
+    }
+    51% {
+        left: calc(100% + 200px);
+        transform: scaleX(-1);    
+        top: 200px;
+    }
+    98% {
+        left: -200px;       
+        transform: scaleX(-1);
+        top: 100px;
+    }
+    100% {
+        left: -300px;        
+        transform: scaleX(-1);
+        top: 100px;
+    }
+}
+
+@keyframes gold {
+    0% {
+        left: -200px;        
+        transform: scaleX(1);
+    }
+    50% {
+        left: calc(100% + 200px); 
+        transform: scaleX(1);
+        top: 300px;
+    }
+    51% {
+        left: calc(100% + 200px);
+        transform: scaleX(-1);    
+        top: 200px;
+    }
+    98% {
+        left: -200px;       
+        transform: scaleX(-1);
+        top: 100px;
+    }
+    100% {
+        left: -300px;       
+        transform: scaleX(-1);
+        top: 100px;
+    }
+}
+
+@keyframes turtle {
+    0% {
+        left: -200px;        
+        transform: scaleX(1);
+    }
+    50% {
+        left: calc(100% + 200px); 
+        transform: scaleX(1);
+        top: 300px;
+    }
+    51% {
+        left: calc(100% + 200px);
+        transform: scaleX(-1);    
+        top: 200px;
+    }
+    98% {
+        left: -200px;        
+        transform: scaleX(-1);
+        top: 100px;
+    }
+    100% {
+        left: -300px;        
+        transform: scaleX(-1);
+        top: 100px;
+    }
+}

@@ -1,0 +1,325 @@
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo {
+    font-family: "Jolly Lodger", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+
+ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.home__container {
+  display: flex;
+  flex-direction: column; /* Xếp các phần tử con (ảnh, chữ) theo chiều dọc */
+  align-items: center;   /* Căn giữa tất cả theo chiều ngang */
+  position: relative;
+}
+
+.moon {
+    max-width: 100%;
+    height: auto;
+    margin-top: -200px;
+    z-index: -2;
+    position: relative;
+}
+
+.bingo {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    bottom: -18%;
+}
+ .co {
+    position: absolute;
+    max-width: 100%;
+    z-index: 1;
+    bottom: -35%;
+    height: auto;
+ }
+
+ .point {
+    position: absolute;
+    max-width: 100%;
+    z-index: -3;
+ }
+
+ .shadow {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    z-index: -4;
+    top: 7%;
+ }
+
+ .stone {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    z-index: -2;
+    bottom: -40%;
+ }
+
+ .cay {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    bottom: -40%;
+    z-index: -3;
+ }
+
+.button {
+    position: absolute;
+    z-index: 2;
+    bottom: -25%;
+    background-color: #DA4C07;
+    height:40px;
+    width: 120px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+span {
+    font-family: "Jolly Lodger", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.button:hover {
+  box-shadow: 
+    0 0 5px #FF8C00,     /* 1. Lõi trắng bên trong (nhỏ nhất) */
+    0 0 10px #FF7F00,    /* 2. Lõi trắng lớn hơn 1 chút */
+    0 0 20px #EE7600,  /* 3. Quầng sáng màu (ví dụ: màu Cyan) */
+    0 0 40px #CD6600,  /* 4. Quầng sáng màu mờ hơn */
+    0 0 80px #FF7F50;  /* 5. Quầng sáng mờ và rộng nhất */
+    transition: 0.7s;
+}
+
+.title {
+    font-family: "Jolly Lodger", cursive;
+    font-weight: 500;
+    font-size: 130px;
+    color: black;
+    text-align: center;
+    margin-right: 10px;
+    margin-top: 140px;
+    text-shadow: 0 0 5px #FF8C00,     /* 1. Lõi trắng bên trong (nhỏ nhất) */
+    0 0 10px #FF7F00,    /* 2. Lõi trắng lớn hơn 1 chút */
+    0 0 20px #EE7600,  /* 3. Quầng sáng màu (ví dụ: màu Cyan) */
+    0 0 40px #CD6600,  /* 4. Quầng sáng màu mờ hơn */
+    0 0 80px #FF7F50;  /* 5. Quầng sáng mờ và rộng nhất */ ;
+}
+
+.tieude {
+    position: absolute;
+    position: absolute; /* Quan trọng: "Nổi" lên trên ảnh */
+    top: 50%;           /* Đẩy 50% từ trên xuống */
+    left: 50%;          /* Đẩy 50% từ trái qua */
+    transform: translate(-50%, -50%); /* Kéo ngược lại 50% kích thước của chính nó để căn giữa */
+    line-height: 0.4;
+}
+
+.menu ul li:hover {
+    text-shadow: 0 0 5px #FF8C00,     /* 1. Lõi trắng bên trong (nhỏ nhất) */
+    0 0 10px #FF7F00,    /* 2. Lõi trắng lớn hơn 1 chút */
+    0 0 20px #EE7600,  /* 3. Quầng sáng màu (ví dụ: màu Cyan) */
+    0 0 40px #CD6600,  /* 4. Quầng sáng màu mờ hơn */
+    0 0 80px #FF7F50;  /* 5. Quầng sáng mờ và rộng nhất */
+    border-bottom: 1px solid #CD6600;
+    transition: 0.3s;
+   
+}
+
+@media (max-width: 900px) {
+    .nav.container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px; 
+        padding: 1rem;
+    }
+
+    .menu {
+        margin-right: 0 !important; 
+        width: 100%;
+        display: flex; 
+        justify-content: center;
+    }
+
+    .menu .nav__list {
+        flex-direction: column;
+        align-items: center;
+        padding: 0; 
+        gap: 20px; 
+    }
+
+    .menu .nav__link {
+        font-size: 1.2rem; 
+    }
+
+    .title {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    .tieude h1.title:nth-child(2) {
+        font-size: 60px !important;
+    }
+
+    .tieude {
+        line-height: 0.6;
+        margin-top: 20px;
+    }
+    
+    .moon {
+        margin-top: -100px;
+        max-width: 120%;
+    }
+
+    .bingo {
+        bottom: -10%; 
+        max-width: 40%;
+    }
+    
+    .co {
+        bottom: -20%; /* Đẩy lên */
+        max-width: 100%;
+    }
+    
+    .stone {
+        bottom: -25%; /* Đẩy lên */
+        max-width: 100%;
+    }
+    
+    .cay {
+        bottom: -25%; /* Đẩy lên */
+        max-width: 100%;
+    }
+
+    .button {
+        bottom: -40%; 
+    }
+
+    .main {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .title {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+    .tieude h1.title:nth-child(2) {
+        font-size: 40px !important; 
+    }
+
+    .tieude {
+        margin-top: 120px;
+    }
+
+    .bingo {
+        bottom: -5%;
+    }
+
+    .button {
+        bottom: -40%;
+    }
+}
+
+@media (max-width: 1400px) {
+    .bingo {
+        max-width: 30%;
+    }
+
+    #bg {
+        margin-top: 100px
+    }
+
+    .tieude {
+        margin-top: -34%;
+    }
+
+    .title {
+        font-size: 90px;
+        margin-top: 10px;
+    }
+    .tieude h1.title:nth-child(2) {
+        font-size: 120px !important; 
+    }
+
+    .button {
+        bottom: -40%;
+    }
+}
+
+@media (min-width: 540px) and (max-width: 720px) {
+    .tieude {
+        margin-top: 280px;
+    }
+    .title {
+        font-size: 60px;
+        margin-top: 10px;
+    }
+    .tieude h1.title:nth-child(2) {
+        font-size: 90px !important; 
+    }
+    .button {
+        bottom: -15%;
+    }
+}
+
+@media (min-width: 344px) and (max-width: 882px) {
+    .tieude {
+        margin-top: 100px;
+    }
+    .title {
+        font-size: 38px;
+        margin-top: 10px;
+    }
+    .tieude h1.title:nth-child(2) {
+        font-size: 50px !important; 
+    }
+    .button {
+        bottom: -30%;
+    }
+}
+
+@media (min-width: 853px) and (max-width: 1280px) {
+    .tieude {
+        margin-top: 120px;
+    }
+    .title {
+        font-size: 80px;
+        margin-top: 10px;
+    }
+    .tieude h1.title:nth-child(2) {
+        font-size: 120px !important; 
+    }
+    .button {
+        bottom: -30%;
+    }
+}
+
+
+

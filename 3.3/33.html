@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="qlsp.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Thêm sản phẩm mới</h1>
+    <div id="newproduct">
+        <input type="text" id="nproduct" placeholder="Nhập tên sản phẩm cần thêm" value="">
+        <button onclick="add()">Thêm</button>
+    </div>
+    <div class="title" style="display: flex; justify-content: space-between;">
+        <h1>Tất cả sản phẩm</h1>
+        <div id="count">
+
+        </div>
+    </div>
+    
+    <div id="display">
+        
+    </div>
+    <script>
+        function render() {
+            document.getElementById('display').innerHTML = show();
+            document.getElementById('count').innerHTML = `<b>Có ${dssp.length} sản phẩm</b>`;
+        }
+        var dssp = ['Sony Xperia','Samsung Galaxy', 'Nokia 6', 'Xiaomi Redmi Note 4', 'Apple Iphone 6S'];
+
+        function show(){
+            var s = "";
+            for ( var i = 0; i < dssp.length; i++){
+                 s += `<div class="product-item">
+                <span class="product-name">${dssp[i]}</span>
+                <span class="product-actions">
+                    <button onclick="edit(${i})" class="edit-btn">Sửa</button> 
+                    <button onclick="remove(${i})" class="delete-btn">Xóa</button>
+                </span>
+            </div>`;
+            }
+            return s;
+        }
+        function add(){
+            var newProduct = document.getElementById('nproduct').value;
+            if ( newProduct !== "") {
+                dssp.push(newProduct);
+                render();
+                document.getElementById('nproduct').innerHTML = "";
+            } else {
+                alert("Vui lòng nhập sản phẩm cần thêm")
+            }
+        }
+        function edit(i) {
+            var newname = prompt("Nhập vào tên mới của sản phẩm");
+            if (newname !== null && newname !== "") {
+                dssp[i] = newname;
+                render();
+            } else {
+                alert("Vui lòng nhập tên mới của sản phẩm")
+            } 
+        }
+        function remove(i){
+            if (confirm("Bạn có chắc là muốn xóa "+dssp[i]+" không?")) {
+                dssp.splice(i,1);
+                render();
+            }
+        }
+        render();
+        
+    </script>
+</body>
+</html>

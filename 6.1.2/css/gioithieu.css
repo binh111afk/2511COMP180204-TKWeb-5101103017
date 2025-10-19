@@ -1,0 +1,290 @@
+body {
+    font-family: "Nunito", sans-serif;
+    color: #fff;
+}
+
+body {
+  background-color: black;
+  background-color: #000;
+  background-image: url('../img/fog.png'), linear-gradient(to bottom, #0d1a2a, #000000);
+  background-repeat: no-repeat;
+  background-position: bottom center, center;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo {
+    font-family: "Jolly Lodger", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+
+ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    font-family: 'Nunito', sans-serif;
+}
+
+.menu ul li:hover {
+    text-shadow: 0 0 5px #FF8C00,     /* 1. Lõi trắng bên trong (nhỏ nhất) */
+    0 0 10px #FF7F00,    /* 2. Lõi trắng lớn hơn 1 chút */
+    0 0 20px #EE7600,  /* 3. Quầng sáng màu (ví dụ: màu Cyan) */
+    0 0 40px #CD6600,  /* 4. Quầng sáng màu mờ hơn */
+    0 0 80px #FF7F50;  /* 5. Quầng sáng mờ và rộng nhất */
+    border-bottom: 1px solid #CD6600;
+    transition: 0.3s;
+}
+
+.bxh {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 20px;
+  color: white;
+}
+
+.bxh-title {
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ff7518;
+  letter-spacing: 1px;
+}
+
+.topone, .toptwo, .topthree {
+  display: flex;
+  gap: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 25px;
+  width: 90%;
+  max-width: 1100px;
+  box-shadow: 0 0 10px rgba(255, 117, 24, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.toptwo {
+    gap: 100px;
+}
+
+.topthree {
+    gap: 100px;
+}
+
+.topone:hover, .toptwo:hover, .topthree:hover {
+  transform: scale(1.02);
+}
+
+/* Ảnh nhân vật */
+.topone img, .toptwo img, .topthree img {
+  width: 250px;
+  border-radius: 10px;
+}
+
+.toptwo img {
+    padding-left: 60px;
+}
+
+.topthree img {
+    padding-left: 50px;
+}
+
+/* Chữ mô tả */
+.recommemd1, .recommemd2, .recommemd3 {
+  text-align: left;
+}
+
+.recommemd1 h3, .recommemd2 h3, .recommemd3 h3 {
+  color: #ffb347;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.recommemd1 h1, .recommemd2 h1, .recommemd3 h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.recommemd1 p, .recommemd2 p, .recommemd3 p {
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(13, 13, 13, 0.7);
+  border-radius: 15px;
+  padding: 40px 80px;
+  gap: 60px;
+  margin-top: 40px;
+  box-shadow: 0 0 25px rgba(255, 140, 0, 0.2);
+}
+
+.about .his h3 {
+  font-size: 40px;
+  color: #ffa500;
+  text-shadow: 0 0 15px #ff4500;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.about .his p {
+  font-size: 17px;
+  line-height: 1.8;
+  text-align: justify;
+  color: #ddd;
+}
+
+.about img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 25px #ff6600;
+  margin-top: 50px;
+}
+
+hr {
+  width: 80%;
+  margin: 50px auto;
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #ff7b00, transparent);
+}
+
+@media (max-width: 768px) {
+    .nav.container {
+        flex-direction: column; 
+        padding: 1rem;
+    }
+
+    .menu {
+        margin-right: 0 !important; 
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu .nav__list {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        gap: 15px;
+    }
+
+    .bxh {
+        padding: 150px 15px 40px 15px; 
+        gap: 30px;
+    }
+
+    .bxh-title {
+        font-size: 30px; 
+    }
+
+    .topone, .toptwo, .topthree {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        width: 100%; 
+    }
+
+    .toptwo, .topthree {
+        gap: 20px; 
+    }
+
+    .recommemd1, .recommemd2, .recommemd3 {
+        text-align: justify; 
+    }
+    
+    .recommemd1 h1, .recommemd2 h1, .recommemd3 h1 {
+        font-size: 26px; /* Giảm cỡ chữ */
+    }
+
+    .topone img, .toptwo img, .topthree img {
+        width: 200px; 
+        padding-left: 0 !important; 
+    }
+
+    .about {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 30px !important;
+        padding: 30px 20px;
+        width: 100%;
+    }
+
+    iframe {
+      width: 90%;
+    }
+
+    .about .his {
+        margin-left: 0 !important;
+    }
+    
+    .about .his h3 {
+        font-size: 28px; 
+    }
+    
+    .about .his p {
+        text-align: left; 
+        font-size: 16px;
+    }
+
+    .about img {
+        margin-right: 0 !important;
+        margin-top: 0 !important; 
+        max-width: 250px; 
+        justify-self: center; 
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .bxh {
+        padding-top: 200px; 
+    }
+
+    .bxh-title {
+        font-size: 24px;
+    }
+
+    .recommemd1 h1, .recommemd2 h1, .recommemd3 h1 {
+        font-size: 22px;
+    }
+    
+    .recommemd1 p, .recommemd2 p, .recommemd3 p {
+        font-size: 15px;
+    }
+
+    .about .his h3 {
+        font-size: 22px;
+    }
+
+    .about .his p {
+        font-size: 15px;
+    }
+    
+    .topone img, .toptwo img, .topthree img {
+        width: 180px; 
+    }
+}
+

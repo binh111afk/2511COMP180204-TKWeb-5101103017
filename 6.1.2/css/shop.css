@@ -1,0 +1,161 @@
+body {
+    font-family: "Nunito", sans-serif;
+    color: #fff;
+}
+
+body {
+  background-color: black;
+  background-color: #000;
+  background-image: url('../img/fog.png'), linear-gradient(to bottom, #0d1a2a, #000000);
+  background-repeat: no-repeat;
+  background-position: bottom center, center;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo {
+    font-family: "Jolly Lodger", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+
+ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    font-family: 'Nunito', sans-serif;
+}
+
+.menu ul li:hover {
+    text-shadow: 0 0 5px #FF8C00,     /* 1. Lõi trắng bên trong (nhỏ nhất) */
+    0 0 10px #FF7F00,    /* 2. Lõi trắng lớn hơn 1 chút */
+    0 0 20px #EE7600,  /* 3. Quầng sáng màu (ví dụ: màu Cyan) */
+    0 0 40px #CD6600,  /* 4. Quầng sáng màu mờ hơn */
+    0 0 80px #FF7F50;  /* 5. Quầng sáng mờ và rộng nhất */
+    border-bottom: 1px solid #CD6600;
+    transition: 0.3s;
+}
+
+.shop-title {
+  text-align: center;
+  font-size: 45px;
+  margin-top: 50px;
+  color: #ff7518;
+  text-shadow: 0 0 15px black;
+}
+
+.product-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin: 50px auto;
+  max-width: 1000px;
+}
+
+.product-item {
+  background-color: rgba(13, 13, 13, 0.7);
+  border: 2px solid #ff7518;
+  border-radius: 15px;
+  width: 220px;
+  text-align: center;
+  padding: 20px;
+}
+
+.product-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px #ff7518;
+  transition: 0.5s ease-in-out;
+}
+
+.product-item img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.product-item h3 {
+  color: #ffb347;
+  margin: 5px 0;
+}
+
+.product-item p {
+  font-size: 15px;
+  color: #ccc;
+  margin: 5px 0 10px;
+}
+
+.current-price {
+  font-weight: 700;
+  color: #ff7518;
+  font-size: 18px;
+}
+
+.buy-btn {
+  background-color: #ff7518;
+  color: #000;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.buy-btn:hover {
+  background-color: #ffa500;
+  transform: scale(1.05);
+}
+
+hr {
+  width: 80%;
+  margin: 50px auto;
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #ff7b00, transparent);
+}
+
+@media (max-width: 768px) {
+    .nav.container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px; 
+        padding: 1rem;
+    }
+
+    .menu {
+        margin-right: 0 !important; 
+        width: 100%;
+        display: flex; 
+        justify-content: center;
+    }
+
+    .menu .nav__list {
+        flex-direction: column;
+        align-items: center;
+        padding: 0; 
+        gap: 20px; 
+    }
+
+    .menu .nav__link {
+        font-size: 1.2rem; 
+    }
+
+    .shop-title {
+      font-size: 30px;
+    }
+}

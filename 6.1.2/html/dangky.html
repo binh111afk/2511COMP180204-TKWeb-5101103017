@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+   <link rel="stylesheet" href="../css/dangky.css">
+   <title>Halloween</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Jolly+Lodger&family=Metal+Mania&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+<body>
+   <header class="header" id="header">
+      <nav class="nav container">
+         <a href="#" class="logo">
+            Halloween
+         </a>
+         <div class="menu" id="nav-menu" style="margin-right: 20px;">
+            <ul class="nav__list">
+               <li class="nav__item">
+                  <a href="../html/trangchu.html" class="nav__link">Trang chủ</a>
+               </li>
+
+               <li class="nav__item">
+                  <a href="../html/gioithieu.html" class="nav__link">Giới thiệu</a>
+               </li>
+
+               <li class="nav__item">
+                  <a href="../html/shop.html" class="nav__link">Cửa hàng</a>
+               </li>
+
+               <li class="nav__item">
+                  <a href="../html/bosuutap.html" class="nav__link">Bộ sưu tập</a>
+               </li>
+
+               <li class="nav__item">
+                  <a href="../html/lienhe.html" class="nav__link">Liên hệ</a>
+               </li>
+
+               <li class="nav__item">
+                  <a href="../html/dangky.html" class="nav__link" style="color: #ff7518;">Đăng ký</a>
+               </li>
+            </ul>
+      </nav>
+   </header>
+   <main class="main">
+      <h1 class="form-title">🕸️ ĐĂNG KÝ HALLOWEEN 🕸️</h1>
+      <form class="register-form">
+         <div class="form-group">
+            <label for="name">Họ và tên</label>
+            <input type="text" id="name" placeholder="Nhập họ tên của bạn" required>
+         </div>
+
+         <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Nhập email" required>
+         </div>
+
+         <div class="form-group">
+            <label for="password">Mật khẩu</label>
+            <input type="password" id="password" placeholder="Tạo mật khẩu" required>
+         </div>
+
+         <div class="form-group">
+            <label for="confirm">Nhập lại mật khẩu</label>
+            <input type="password" id="confirm" placeholder="Nhập lại mật khẩu" required>
+         </div>
+
+         <div class="form-group">
+            <label for="role">Bạn là</label>
+            <select id="role" required>
+               <option value="">-- Chọn vai trò --</option>
+               <option value="witch">Phù thủy</option>
+               <option value="vampire">Ma cà rồng</option>
+               <option value="ghost">Hồn ma</option>
+               <option value="human">Con người</option>
+            </select>
+         </div>
+
+         <button type="submit" class="submit-btn">Đăng ký</button>
+      </form>
+   </main>
+   <audio id="bg-music" autoplay loop>
+      <source src="../mp4/Download (1).mp3" type="audio/mpeg">
+   </audio>
+</body>
+</html>

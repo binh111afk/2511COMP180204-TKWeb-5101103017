@@ -1,0 +1,151 @@
+body {
+  background-color: black;
+  background-color: #000;
+  background-image: url('../img/fog.png'), linear-gradient(to bottom, #0d1a2a, #000000);
+  background-repeat: no-repeat;
+  background-position: bottom center, center;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito',sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo {
+    font-family: "Jolly Lodger", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+
+ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    font-family: 'Nunito', sans-serif;
+}
+
+.menu ul li:hover {
+    text-shadow: 0 0 5px #FF8C00,     /* 1. Lõi trắng bên trong (nhỏ nhất) */
+    0 0 10px #FF7F00,    /* 2. Lõi trắng lớn hơn 1 chút */
+    0 0 20px #EE7600,  /* 3. Quầng sáng màu */
+    0 0 40px #CD6600,  /* 4. Quầng sáng màu mờ hơn */
+    0 0 80px #FF7F50;  /* 5. Quầng sáng mờ và rộng nhất */
+    border-bottom: 1px solid #CD6600;
+    transition: 0.3s;
+}
+
+.contact-section {
+  max-width: 700px;
+  margin: 100px auto;
+  text-align: center;
+  background: rgba(13, 13, 13, 0.7);
+  padding: 40px 60px;
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(255, 102, 0, 0.3);
+}
+
+.contact-section h1 {
+  color: #ff7518;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.intro {
+  color: #ddd;
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+
+.form-group {
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #ff6600;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #ff7518;
+  color: black;
+  font-size: 16px;
+  outline: none;
+}
+
+input:focus, textarea:focus {
+  box-shadow: 0 0 10px #ff7518;
+  border-color: #ff6600;
+}
+
+.send-btn {
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.send-btn:hover {
+  box-shadow: 0 0 15px #ff7518;
+  background-color: #e65c00;
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+textarea::placeholder {
+    font-family: 'Nunito',sans-serif;
+}
+
+@media (max-width: 768px) {
+    .nav.container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px; 
+        padding: 1rem;
+    }
+
+    .menu {
+        margin-right: 0 !important; 
+        width: 100%;
+        display: flex; 
+        justify-content: center;
+    }
+
+    .menu .nav__list {
+        flex-direction: column;
+        align-items: center;
+        padding: 0; 
+        gap: 20px; 
+    }
+
+    .menu .nav__link {
+        font-size: 1.2rem; 
+    }
+
+    .shop-title {
+      font-size: 30px;
+    }
+
+    section {
+        max-width: 100%;
+    }
+}
