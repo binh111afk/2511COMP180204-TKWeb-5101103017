@@ -137,7 +137,7 @@ b {
     border-radius: 20%;
 }
 
-/* --- Cấu trúc Resume nội bộ --- */
+/* --- Cấu trúc Resume--- */
 .resume img {
     width: 50px;
     height: 50px;
@@ -150,7 +150,7 @@ b {
     margin-bottom: 10px;
 }
 
-/* Gỡ bỏ các margin không cần thiết cho h2, chỉ giữ lại nếu cần thiết để căn chỉnh */
+
 .head2 h2 {
     margin-top: 30px;
 }
@@ -169,7 +169,6 @@ b {
     line-height: 40px;
 }
 
-/* --- Style Table --- */
 table {
     width: 100%;
     border: 2px solid #6E8B3D;
@@ -187,4 +186,135 @@ th, td {
 th {
     background-color: #CD853F;
     color: white;
+}
+
+@media (max-width: 768px) {
+    .body {
+        flex-direction: column;
+        margin: 20px 15px; 
+        gap: 20px;
+    }
+
+    /* --- Khối Avatar --- */
+    .avatar {
+        flex-direction: column;
+        align-items: center; 
+        gap: 20px;
+        margin: 20px 15px; 
+        padding: 20px;
+        border-radius: 30px;
+    }
+
+    .anhdaidien img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .profile {
+        text-align: center;
+    }
+
+    .profile h1 {
+        font-size: 24px;
+    }
+
+    .profile p {
+        font-size: 16px;
+    }
+
+    .social {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .social img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .infor {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center; 
+        text-align: center; 
+        margin-top: 0;
+        line-height: 1.5;
+    }
+
+    .infor .contact-block p { 
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .menu {
+        width: 100%;
+        margin: 0;
+        height: auto; 
+    }
+
+    .tools {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: space-around; 
+        width: 100%;
+        padding: 10px 0;
+        gap: 50px;
+    }
+
+    .tools li {
+        margin: 5px 10px; 
+    }
+
+    .tools li a img {
+        width: 45px;
+        height: 50px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .tools li p {
+        font-size: 14px; 
+    }
+
+    .body .resume {
+        width: 100%;
+        margin: 0; 
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    
+    .body .resume h2 {
+        font-size: 22px;
+    }
+
+    .resume img {
+        width: 35px;
+        height: 35px;
+        margin: 10px;
+    }
+    
+    .head1 h2, .head2 h2, .head3 h2 {
+        font-size: 20px;
+        margin-top: 0;
+    }
+
+    .school li h3 {
+        font-size: 18px;
+    }
+    .school li p, .achive li {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    table {
+        display: block;        
+        width: 100%;           
+        overflow-x: auto;     
+        font-size: 14px;       
+    }
+
+    th, td {
+        padding: 8px 12px; 
+    }
 }

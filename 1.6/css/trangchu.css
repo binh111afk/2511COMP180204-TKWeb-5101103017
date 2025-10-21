@@ -1,4 +1,4 @@
-/* Sử dụng thuộc tính font-family cơ bản */
+
 body {
     background-color: #F5F5DC;
     font-family: "Outfit", sans-serif;
@@ -132,4 +132,102 @@ b {
 .body .recommend hr {
     border: 1px solid #7A67EE;
     border-radius: 20%;
+}
+
+@media (max-width: 768px) {
+    .body {
+        flex-direction: column;
+        margin: 20px 15px; 
+        gap: 20px;
+    }
+
+    .avatar {
+        flex-direction: column;
+        align-items: center; 
+        gap: 20px;
+        margin: 20px 15px; 
+        padding: 20px;
+        border-radius: 30px;
+    }
+
+    .anhdaidien img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .profile {
+        text-align: center;
+    }
+
+    .profile h1 {
+        font-size: 24px;
+    }
+
+    .profile p {
+        font-size: 16px;
+    }
+
+    .social {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .social img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .infor {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center; 
+        text-align: center; 
+        margin-top: 0;
+        line-height: 1.5;
+    }
+
+    .infor p {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .menu {
+        width: 100%;
+        margin: 0; 
+    }
+
+    .tools {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: space-around; 
+        width: 100%;
+        padding: 10px 0;
+        gap: 50px;
+    }
+
+    .tools li {
+        margin: 5px 10px; 
+    }
+
+    .tools li a img {
+        width: 45px;
+        height: 50px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .tools li p {
+        font-size: 14px; 
+    }
+
+    .body .recommend {
+        margin-top: 0; 
+        padding: 20px;
+    }
+
+    .body .recommend p {
+        font-size: 16px;
+        line-height: 1.6; 
+    }
 }
