@@ -133,10 +133,10 @@ span {
 
 .tieude {
     position: absolute;
-    position: absolute; /* Quan trọng: "Nổi" lên trên ảnh */
-    top: 50%;           /* Đẩy 50% từ trên xuống */
-    left: 50%;          /* Đẩy 50% từ trái qua */
-    transform: translate(-50%, -50%); /* Kéo ngược lại 50% kích thước của chính nó để căn giữa */
+    position: absolute; 
+    top: 50%;          
+    left: 50%;         
+    transform: translate(-50%, -50%);
     line-height: 0.4;
 }
 
